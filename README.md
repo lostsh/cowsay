@@ -13,3 +13,10 @@ gcc cow.c -o cowsay
 ```bash
 ./cow Typical cowsay output!
 ```
+
+<hr>
+
+## Debug compilation
+```bash
+gcc -g -std=c99 -Wall -pedantic -fsanitize=address cow.c -o cowsay && echo -e "[+]\tCompilation success." || echo -e "[-]\tCompilation exception."
+```
